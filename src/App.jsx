@@ -1,18 +1,15 @@
-import { RouterProvider } from 'react-router-dom'
-import router from "./router"
-
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
+import { UserContext } from "./UserContext";
 
 function App() {
-
-  return(
+  return (
     <>
-    <userContext>
-      
-    </userContext>
-    <RouterProvider router={router}/>
+      <UserContext>
+        <RouterProvider router={router} />
+      </UserContext>
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;

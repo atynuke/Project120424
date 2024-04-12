@@ -4,7 +4,7 @@ import { formContext } from '../UserContext'
 export const Admin = () => {
 
 
-  const {createUser, updateUser} = useContext(formContext)
+  const {createUser,updateUser} = useContext(formContext)
   // const [createUser, setCreateUser] =useState({
   //     username: "",
   //     email: "",
@@ -31,7 +31,7 @@ export const Admin = () => {
      <form onSubmit={handleSubmit}>
       {imgUrl && <img src= {imgUrl} alt='images'/>}
       <input type="email" placeholder='Email' name='email' value={email} onChange={handleChange}  />
-      <input type="text" placeholder='Username' name='username' value={email} onChange={handleChange} />
+      <input type="text" placeholder='Username' name='username' value={username} onChange={handleChange} />
       <input type="file" name="imgUrl" onChange={handleChange}/>     
       <button type="submit">Create user</button>
 
