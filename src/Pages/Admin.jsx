@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react'
+import { formContext } from '../UserContext'
 
 export const Admin = () => {
 
 
-  const{createUser, updateUser} =useContext([])
+  const {createUser, updateUser} = useContext(formContext)
   // const [createUser, setCreateUser] =useState({
   //     username: "",
   //     email: "",

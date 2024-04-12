@@ -7,7 +7,6 @@ export const MainLayout = () => {
   return (
     <div className="layout">
       
-      {/* <Admin></Admin> */}
       
       <div id="sideNav">
         <SideNav />
